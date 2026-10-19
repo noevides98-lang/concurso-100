@@ -40,10 +40,10 @@ body.projector.welcome #welcome{border-radius:0;background:#020b25}body.projecto
 
 #answers .answer,#answers .answer.revealed,body.projector #answers .answer{position:relative;display:block;aspect-ratio:4.65;min-height:0;height:auto;padding:0;border:0;border-radius:0;background:none;perspective:1100px;container-type:inline-size;overflow:visible}
 .answer-rotor{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.4,0,.2,1)}
-.answer.flipped .answer-rotor{transform:rotateY(180deg)}
+.answer.flipped .answer-rotor{transform:rotateX(-180deg)}
 .answer-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background-position:center 48%;background-size:100% 158%;background-repeat:no-repeat}
 .answer-front{background-image:url('assets/respuesta-oculta.png');transform:rotateY(0deg)}
-.answer-back{background-image:url('assets/respuesta-revelada.png');transform:rotateY(180deg);display:flex;align-items:center;justify-content:space-between;gap:3%;padding:5% 7%;box-sizing:border-box;color:white;text-shadow:0 2px 4px #00252c;font-size:clamp(13px,5.4cqw,34px)}
+.answer-back{background-image:url('assets/respuesta-revelada.png');transform:rotateX(-180deg);display:flex;align-items:center;justify-content:space-between;gap:3%;padding:5% 7%;box-sizing:border-box;color:white;text-shadow:0 2px 4px #00252c;font-size:clamp(13px,5.4cqw,34px)}
 .answer-text{min-width:0;overflow-wrap:anywhere;line-height:1.1;font-weight:800}
 #answers .answer-back .pts{background:#003f48b3;color:#fff;flex-shrink:0;font-size:1.15em;padding:.15em .3em;border-radius:5px;min-width:1.5em;text-align:center}
 @media(prefers-reduced-motion:reduce){.answer-rotor{transition:none}}
