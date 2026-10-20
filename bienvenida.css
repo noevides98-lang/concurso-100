@@ -1,7 +1,7 @@
 .bienvenida-animada{position:relative;isolation:isolate;width:100%;height:100%;min-height:280px;overflow:hidden;background:#030b35}
 .bienvenida-animada::before{content:"";position:absolute;inset:0;background:url('assets/fondo-bienvenida.png') center/cover no-repeat;mask-image:radial-gradient(ellipse at center,#000 45%,transparent 100%)}
 .bienvenida-escena{position:absolute;left:50%;top:50%;width:min(100%,calc(100vh * 16 / 9));aspect-ratio:16/9;transform:translate(-50%,-50%)}
-.bienvenida-titulo{position:absolute;left:12%;top:5%;width:76%;height:74%;object-fit:contain;animation:bienvenida-flotar 2s ease-in-out infinite,bienvenida-brillo 3s ease-in-out infinite}
+.bienvenida-titulo{position:absolute;left:12%;top:5%;width:76%;height:74%;object-fit:contain;animation:bienvenida-flotar 4s ease-in-out infinite,bienvenida-brillo 3s ease-in-out infinite}
 .bienvenida-distintivo{position:absolute;left:38%;bottom:5%;width:24%;height:auto}
 @keyframes bienvenida-flotar{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-6%) scale(1.15)}}
 @keyframes bienvenida-brillo{0%,65%,100%{filter:brightness(1)}78%{filter:brightness(1.15) drop-shadow(0 0 12px #69cfff80)}}
